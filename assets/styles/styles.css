@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
+:root {
+    --fonte-principal: 'Merriweather', serif;
+    --cor-primária: #F5F5F5;
+    --cor-secundária: #121212;
+    --cor-botões: #EFF5F5 ;
+    --cor-done: #495579;
+}
+
+* {
+    
+    font-family: var(--fonte-principal);
+    box-sizing: border-box;
+    color: var(--cor-secundária);
+}
+
+body {
+    background-image: url(/assets/img/aesthetic-minimalist-firewatch-fa8mgdbaweglc244.jpg);
+    background-size: cover;
+}
+
+button {
+    background-color: var(--cor-botões);
+    color: var(--cor-secundária);
+    border: solid 1px var(--cor-secundária);
+    border-radius: 2px;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+button i {
+    color: var(--cor-secundária);
+    font-weight: bold;
+    pointer-events: none;
+
+}
+
+button:hover {
+    background-color: var(--cor-secundária);
+}
+
+button:hover>i {
+    color: var(--cor-botões);
+}
+
+input,
+select {
+    padding: .25rem .5rem;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-size: larger;
+}
+
+/* todo header */
+
+.todo-container {
+    max-width: 450px;
+    margin: 3em auto ;
+    background-color: var(--cor-primária);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+.todo-container header{
+    text-align: center;
+    padding: 0 1em 1em;
+    border-bottom: solid .5px var(--cor-secundária);
+}
+
+/* todo form */
+#todo-form, #edit-form{
+    padding: 1em;
+    border-bottom: solid .5px var(--cor-secundária);
+}
+
+#todo-form p, #edit-form p{
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: .3em;
+}
+#cancel-edit-btn{
+    margin-top: .3em;
+}
+
+/* todo toolbar */
+
+#toolbar{
+    padding: 1em;
+    border-bottom: solid 1px var(--cor-secundária);
+    display: flex;
+}
+#toolbar h4{
+    margin-bottom: .5em;
+}
+
+#search{
+    border-right: solid .01em var(--cor-secundária); ;
+    margin-right: 1em;
+    padding-right: 1em;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form{
+    display: flex;
+
+}
+#search input{
+    width: 100%;
+    margin-right: .3em;
+}
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+#filter select{
+    flex: 1;
+}
+
+/* todo list */
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid var(--cor-secundária);
+    transition: .3s;
+}
+.todo h3{
+    flex: 1;
+    font-size: 1.1em;
+}
+.todo button{
+    margin-left: .3em;
+}
+
+.done{
+    background-color: var(--cor-done);
+}
+.done h3{
+    color: var(--cor-botões);
+    text-decoration: line-through;
+    font-style: italic;
+}
