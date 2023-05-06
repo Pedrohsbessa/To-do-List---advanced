@@ -217,7 +217,7 @@ const updateTodoStatusLocalStorage = (todoText) => {
     todos.map((todo) =>
         todo.text === todoText ? (todo.done = !todo.done) : null);
 
-    localStorage.setItem('todos'.JSON.stringify(todos));
+    localStorage.setItem('todos', JSON.stringify(todos));
 };
 
 const updateTodoLocalStorage = (todoOldText, todoNewText) => {
