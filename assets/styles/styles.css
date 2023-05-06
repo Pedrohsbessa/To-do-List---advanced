@@ -16,10 +16,10 @@
 }
 
 body {
-    background-image: url(/assets/img/aesthetic-minimalist-firewatch-fa8mgdbaweglc244.jpg);
+    background: url(/assets/img/aesthetic-minimalist-firewatch-fa8mgdbaweglc244.jpg) no-repeat center center fixed;
     /* background-image: url(/assets/img/day\ mode.jpg) */
     background-size: cover;
-    background-repeat: no-repeat;
+    
 }
 
 button {
